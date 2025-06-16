@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忘れられた畑と、目覚めのAI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="background"></div>
+        
+        <div id="character-container">
+            <img id="character" src="" alt="キャラクター" style="display: none;">
+        </div>
+        
+        <div id="text-box">
+            <div id="speaker">ノア</div>
+            <div id="dialog">...</div>
+        </div>
+        
+        <div id="choices-container" style="display: none;">
+            <!-- 選択肢はJavaScriptで動的に生成 -->
+        </div>
+        
+        <div id="controls">
+            <button id="next-btn">次へ</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+{
+  "scenes": [
+    {
+      "id": "intro",
+      "background": "src/assets/images/farm_background.jpg",
+      "character": "",
+      "speaker": "",
+      "text": "荒れ果てた畑が広がる祖父の農場。相続の手続きを終えたあなたは、この場所で新しい生活を始めようとしていた。",
+      "narration": "src/assets/narration/intro.wav",
+      "next": "find_noah"
+    },
+    {
+      "id": "find_noah",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "",
+      "speaker": "",
+      "text": "納屋の奥で、ホコリをかぶった古い農業用タブレットを見つけた。好奇心から電源ボタンを押してみると…",
+      "narration": "src/assets/narration/find_noah.wav",
+      "next": "noah_awakens"
+    },
+    {
+      "id": "noah_awakens",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "???",
+      "text": "起動シーケンスを開始します。農業アシスタントAI「ノア」、オンラインです。おはようございます、ユーザー。",
+      "next": "noah_identifies"
+    },
+    {
+      "id": "noah_identifies",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "ユーザー識別中…あなたは、高橋さんのお孫さんですね？顔の特徴が一致します。高橋さんは…お元気ですか？",
+      "next": "player_response"
+    },
+    {
+      "id": "player_response",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "あなた",
+      "text": "祖父は1年前に亡くなったんだ。この農場を相続したから、これから住むことになった。",
+      "next": "noah_reaction"
+    },
+    {
+      "id": "noah_reaction",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah_sad.png",
+      "speaker": "ノア",
+      "text": "…そうですか。私のデータによると、最終アクセスから3年7ヶ月経過しています。高橋さんは…よい人でした。",
+      "next": "noah_explains"
+    },
+    {
+      "id": "noah_explains",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "私は高性能農業アシスタントAI「ノア」です。作物栽培の最適化、気象予測、害虫対策など、農業に関するあらゆるサポートが可能です。",
+      "next": "noah_offer"
+    },
+    {
+      "id": "noah_offer",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "現在の農場の状態を分析したところ、深刻な荒廃が見られます。あなたは農業の経験がありますか？",
+      "next": "first_choice"
+    },
+    {
+      "id": "first_choice",
+      "background": "src/assets/images/farm_shed.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "どうしますか？",
+      "choices": [
+        {
+          "text": "農業は初めてだけど、挑戦してみたい",
+          "next": "path_beginner"
+        },
+        {
+          "text": "少しだけ経験がある。祖父から教わったことがある",
+          "next": "path_experienced"
+        }
+      ]
+    },
+    {
+      "id": "path_beginner",
+      "background": "src/assets/images/farm_field.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "農業初心者ですね。心配いりません。私がステップバイステップでサポートします。まずは簡単な作物から始めましょう。",
+      "next": "noah_suggestion_beginner"
+    },
+    {
+      "id": "noah_suggestion_beginner",
+      "background": "src/assets/images/farm_field.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "この土壌であれば、ラディッシュが良いでしょう。生育期間が短く、初心者にも育てやすい作物です。高橋さんも最初はラディッシュから始めました。",
+      "next": "end_demo"
+    },
+    {
+      "id": "path_experienced",
+      "background": "src/assets/images/farm_field.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "そうですか！高橋さんから学んだことがあるとは素晴らしいです。彼は素晴らしい農家でした。",
+      "next": "noah_suggestion_experienced"
+    },
+    {
+      "id": "noah_suggestion_experienced",
+      "background": "src/assets/images/farm_field.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "あなたの経験を活かせば、少し挑戦的な作物も可能です。高橋さんが残したデータによると、この土壌は伝統的な在来種の栽培に適しています。地元でほとんど失われた品種を復活させることも可能かもしれません。",
+      "next": "end_demo"
+    },
+    {
+      "id": "end_demo",
+      "background": "src/assets/images/farm_sunset.jpg",
+      "character": "src/assets/images/noah.png",
+      "speaker": "ノア",
+      "text": "これからどんな農場にしていくか、楽しみですね。私も全力でサポートします。…高橋さんが喜んでいるに違いありません。",
+      "next": "demo_complete"
+    },
+    {
+      "id": "demo_complete",
+      "background": "src/assets/images/farm_sunset.jpg",
+      "character": "",
+      "speaker": "",
+      "text": "これにてデモは終了です。フルバージョンではさらに物語が展開し、祖父の秘密やノアの謎が明らかになります。",
+      "next": "restart"
+    },
+    {
+      "id": "restart",
+      "background": "src/assets/images/farm_background.jpg",
+      "character": "",
+      "speaker": "",
+      "text": "もう一度プレイしますか？",
+      "choices": [
+        {
+          "text": "最初からやり直す",
+          "next": "intro"
+        }
+      ]
+    }
+  ]
+}
