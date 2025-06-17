@@ -40,6 +40,7 @@
       "character": "src/assets/images/noah.png",
       "speaker": "あなた",
       "text": "祖父は1年前に亡くなったんだ。この農場を相続したから、これから住むことになった。",
+      "narration": "src/assets/narration/player_response.wav",
       "next": "noah_reaction"
     },
     {
